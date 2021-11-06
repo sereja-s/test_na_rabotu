@@ -1,0 +1,17 @@
+// Подключение базовых стилей:
+@import "./base/base";
+
+// Подключение стилей блоков:
+@import "./blocks/modal";
+
+// Подключение стилей заголовков:
+@import "./blocks/title";
+
+// Подключение стилей кнопок:
+@import "./blocks/button";
+
+// Подключение стилей карточек:
+@import "./blocks/card";
+
+// Подключение радио-кнопок:
+@import "./blocks/radio-select";

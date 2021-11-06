@@ -1,0 +1,73 @@
+.cards-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	// укажем отступы:
+	row-gap: 20px; /* Между колонками (при адаптации) */
+	column-gap: 20px; /* Между рядами */
+}
+// обратимся ко всем карточкам (первый уровень вложенности) внутри .cards-wrapper:
+.cards-wrapper > * {
+	flex-shrink: 0; /* определяет то, насколько flex-блок будет уменьшаться относительно соседних элементов внутри flex-контейнера в случае недостатка свободного места. */
+	/* сжиматься не будут Сразу переходят на новую строку */
+}
+// Зададим отступ между .cards-wrapper и каким либо элементом после него (отступ безопасности):
+.cards-wrapper + * {
+	margin-top: 30px;
+}
+
+.card {
+	width: 200px;
+
+	background: #fff;
+	border: 1px solid #c1c1c1;
+	border-radius: 4px;
+
+	color: black;
+	text-align: center;
+
+	cursor: pointer;
+	transition: box-shadow 0.5s ease-in;
+
+	&:hover {
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+}
+
+// Шапка карточки:
+.card__header {
+	padding: 4px 10px;
+	height: 55px;
+	border-bottom: 1px solid #c1c1c1;
+
+	// Сделаем так, чтобы иконка распологалась по центру:
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Контент карточки:
+.card__body {
+	padding: 20px 35px;
+
+	p {
+		font-size: 16px;
+		line-height: 1.2;
+		text-align: center;
+		color: #000;
+	}
+}
+
+.card__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+	color: #000;
+}
+
+// Укажем отступ для всего что идёт после заголовка (отступ безопасности):
+.card__title + * {
+	margin-top: 15px;
+}

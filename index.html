@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test na rabotu</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="modal">
+
+		<div class="modal__header">
+			<h2 class="title-1">Романтично про любовь</h2>
+		</div>
+		<div class="modal__content">
+
+			<div class="cards-wrapper">
+				<!-- Радио-кнопка 1 -->
+				<input type="radio" name="card" class="radio-select" id="card-1">
+				<!-- Чтобы при щелчке на карточку, выбиралась радио-кнопка, обернём 1-ю карточку в тег label  -->
+				<label for="card-1" class="card">
+					<div class="card__header">
+						<img src="./img/card1.jpg" alt="love">
+					</div>
+					<div class="card__body">
+						<h3 class="card__title">Точно подмечено</h3>
+						<p>Нужно иметь что-то общее, чтобы понимать друг друга, и чем-то отличаться, чтобы любить друг друга
+						</p>
+					</div>
+				</label>
+				<!-- Радио-кнопка 2 -->
+				<input type="radio" name="card" class="radio-select" id="card-2">
+				<!-- Чтобы при щелчке на карточку, выбиралась радио-кнопка, обернём 2-ю карточку в тег label  -->
+				<label for="card-2" class="card">
+					<div class="card__header">
+						<img src="./img/card2.jpg" alt="love">
+					</div>
+					<div class="card__body">
+						<h3 class="card__title">Хорошо сказано</h3>
+						<p>— Как тебя понимать?<br>
+							— Понимать меня необязательно. Обязательно любить и кормить вовремя</p>
+					</div>
+				</label>
+
+			</div>
+			<p>Жизнь без любви – это все равно, что сказка без счастливого конца. По-настоящему человек может быть счастлив
+				только тогда, когда ему есть, кого любить и о ком заботиться </p>
+
+			<p>Любовь может быть с первого взгляда, когда для того, чтобы понять, что судьба подарила встречу со второй
+				половинкой, достаточно только улыбки. А может, наоборот, долго созревать, как пшеничное зернышко </p>
+
+			<p>Романтические отношения напоминают дуэт двух сердец, которые стучат в унисон. Любящие друг друга люди
+				разделяют все жизненные победы и препятствия на двоих. Для влюбленных нет слова «Я»,
+				для них есть только местоимение «МЫ»…</p>
+		</div>
+		<div class="modal__footer">
+			<div class="buttons-row">
+				<button class="button button--primary">Do it!</button>
+				<button class="button"> Cancel</button>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
